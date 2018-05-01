@@ -23,11 +23,11 @@ pipeline {
 //            choice(name: 'APP_VERSION', choices: "v1.1\nv1.2\nv1.3", description: 'What to deploy?')
 //        }
 //      }
-      steps {
-        echo "Deploying ${APP_VERSION}."
-      }
-    }
-  }
+//      steps {
+//        echo "Deploying ${APP_VERSION}."
+//      }
+//    }
+//  }
   environment {
     MY_NAME = 'Jeff'
     TEST_USER = credentials('test-user')
