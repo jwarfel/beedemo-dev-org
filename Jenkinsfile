@@ -60,6 +60,7 @@ pipeline {
               sleep time: 10, unit: 'SECONDS'
             }
           }
+        }
           stage('Java 9') {
             agent { label 'jdk9' }
             steps {
@@ -68,8 +69,6 @@ pipeline {
             }
           }
         }
-      }
-  }
       environment {
     MY_NAME = 'Jeff'
     TEST_USER = credentials('test-user')
