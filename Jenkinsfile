@@ -27,7 +27,7 @@ pipeline {
 //        echo "Deploying ${APP_VERSION}."
 //      }
 //    }
-  }
+//  }
       stage('Get Kernel') {
       steps {
         script {
